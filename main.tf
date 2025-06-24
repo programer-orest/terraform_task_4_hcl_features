@@ -67,7 +67,7 @@ resource "azurerm_network_security_group" "example" {
 }
 
 locals {
-  nic_ids_list = [for list in keys(azurerm_network_interface.main) : azurerm_network_interface.main[list].id]
+  nic_names = [for list in keys(azurerm_network_interface.main) : azurerm_network_interface.main[list].id]
 }
 
 
