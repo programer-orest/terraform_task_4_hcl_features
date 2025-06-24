@@ -11,7 +11,7 @@ variable "for_each_network_interface" {
   default = ["network1", "network2", "network3"]
 }
 
-variable "security_rule" {
+variable "security_rules" {
   default = [
     {
       name                       = "test123"
